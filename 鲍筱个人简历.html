@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲍筱 - 行政主管/综合管理岗</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: #f0f3f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* 头像样式 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: -80px auto 1rem;
+            position: relative;
+            background: #fff url('http://m.qpic.cn/psc?/V10JuGVN1Xio7t/LiySpxowE0yeWXwBdXN*SbU1oVB5woTKGy3VoVhvXngzYrqtpVf0*Lsgb2HGrKaRYFUjasRuMGUJ1HJpfPcei2yDqSFii258G*DibtRmn9U!/b&bo=JwGdAScBnQEDByI!&rf=viewer_4') center/cover;
+        }
+
+        /* 头部样式 */
+        .header {
+            padding: 7rem 2rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), #2980b9);
+            color: white;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* 主体内容 */
+        .main-content {
+            padding: 2rem;
+            position: relative;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: var(--light-bg);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            border-left: 2px solid #ddd;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: #e8f4ff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.3rem;
+            font-size: 0.9em;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+
+        li::marker {
+            color: var(--accent-color);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                margin-top: -60px;
+            }
+        }
+
+        .icon {
+            margin-right: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        @media print {
+            .container {
+                box-shadow: none;
+                margin: 0;
+            }
+            .section {
+                background: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="avatar"></div>
+            <h1 class="name">鲍筱</h1>
+            <div class="contact-info">
+                <div><i class="icon fas fa-birthday-cake"></i>1993年2月 | 湖南长沙</div>
+                <div><i class="icon fas fa-envelope"></i>446063728@qq.com</div>
+                <div><i class="icon fas fa-phone"></i>18684947971</div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <h2><i class="fas fa-bullseye"></i> 职业愿景</h2>
+                <p>行政主管/综合管理岗。在当前岗位已系统掌握行政全模块运作，特别在会务标准化建设、行政成本管控、团队效能提升等方面有成功实践。期待在更具挑战性的管理岗位上，将积累的方法论体系赋能更大团队，同时实现个人职业价值的跃迁。</p>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-star"></i> 核心优势</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> 9年省级媒体会务统筹经验，服务超1000场次高端会议</li>
+                    <li><i class="fas fa-check-circle"></i> 年均协调200+场次跨部门会议资源调度</li>
+                    <li><i class="fas fa-check-circle"></i> 行政流程优化专家，考勤差错率＜0.5%</li>
+                    <li><i class="fas fa-check-circle"></i> 省级物业技能大赛获奖团队核心成员</li>
+                    <li><i class="fas fa-check-circle"></i> 成本控制能手，近3年累计节省行政开支38万元</li>
+                    <li><i class="fas fa-check-circle"></i> 带教5名新人全部通过岗位胜任力考核</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-briefcase"></i> 工作经历</h2>
+                <div class="timeline-item">
+                    <h3>2014/12 – 至今</h3>
+                    <p><strong>湖南广播电视后勤管理服务有限公司 | 行政会务经理</strong></p>
+                    <ul>
+                        <li>高端会务统筹：统筹台内重大会议及外事接待200+场/年，含金鹰节等5项国际级活动</li>
+                        <li>行政运营管理：维护200+人考勤系统，实现月度报表自动化生成</li>
+                        <li>流程优化：建立跨部门协作SOP，会议筹备周期缩短30%</li>
+                        <li>成本控制：优化办公用品采购流程，年节约成本12万元</li>
+                        <li>数字化转型：主导疫情期间"云会务"转型，保障85%会议如期举行</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>2014/03 – 2014/11</h3>
+                    <p><strong>湖南广播影视集团物业管理中心 | 行政实习生</strong></p>
+                    <ul>
+                        <li>参与制定《省级物业接待标准手册》，获集团创新提案奖</li>
+                        <li>在湖南省直单位物业技能大赛中获团队银奖（前5%）</li>
+                        <li>协助完成年度200+场次基础会务支持工作</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+                <div class="timeline-item">
+                    <h3>2011/09 – 2015/06</h3>
+                    <p><strong>中南林业科技大学涉外学院 | 国际经济与贸易 | 管理学学士</strong></p>
+                    <ul>
+                        <li>荣誉：连续2年获院级一等奖学金（前5%）</li>
+                        <li>核心课程：经济法实务、商务文书写作、跨文化沟通</li>
+                        <li>校园经历：学生会行政部部长、校辩论队主力成员</li>
+                    </ul>
+                </div>
+            </section>
+			<section class="section">
+			    <h2><i class="fas fa-tools"></i> 专业技能</h2>
+			    <div class="skills-group">
+			        <!-- 会务管理 -->
+			        <div class="skill-category">
+			            <div class="category-title">会务管理</div>
+			            <div class="skill-tag">大型活动策划</div>
+			            <div class="skill-tag">贵宾接待动线设计</div>
+			            <div class="skill-tag">危机应对预案</div>
+			        </div>
+			
+			        <!-- 行政效能 -->
+			        <div class="skill-category">
+			            <div class="category-title">行政效能</div>
+			            <div class="skill-tag">OA系统</div>
+			            <div class="skill-tag">档案数字化</div>
+			            <div class="skill-tag">智能办公设备运维</div>
+			        </div>
+			
+			        <!-- 办公软件 -->
+			        <div class="skill-category">
+			            <div class="category-title">办公软件</div>
+			            <div class="skill-tag">Excel数据透视表</div>
+			            <div class="skill-tag">PPT视觉化呈现</div>
+			        </div>
+			
+			        <!-- 专业认证 -->
+			        <div class="skill-category">
+			            <div class="category-title">专业认证</div>
+			            <div class="skill-tag highlight">CET-4</div>
+			            <div class="skill-tag highlight">会计从业资格证</div>
+			        </div>
+			    </div>
+			</section>
+			
+			<style>
+			/* 新增CSS样式 */
+			.skills-group {
+			    display: grid;
+			    gap: 1.5rem;
+			    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			}
+			
+			.skill-category {
+			    background: #f8fafc;
+			    padding: 1.2rem;
+			    border-radius: 8px;
+			    border: 1px solid #e2e8f0;
+			}
+			
+			.category-title {
+			    color: var(--accent-color);
+			    font-weight: 600;
+			    margin-bottom: 0.8rem;
+			    padding-bottom: 0.5rem;
+			    border-bottom: 2px solid #e2e8f0;
+			}
+			
+			.skill-tag.highlight {
+			    background: #e6fffa;
+			    color: #2d7a5c;
+			    border: 1px solid #81e6d9;
+			}
+			</style>
+        </main>
+    </div>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
